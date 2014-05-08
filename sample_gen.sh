@@ -8,7 +8,7 @@ _BOOK_DESC="$_BOOK_NAME, the $_BOOK_ORDER book of the A Song of Ice and Fire ser
 _FILE_SEED_DATE="1998-11-16 06:30 PST"
 
 #Download the podcastgen script
-curl -L --silent https://gist.githubusercontent.com/alghanmi/11102772/raw/podcastgen.py > podcastgen.py 
+curl -sL https://raw.githubusercontent.com/alghanmi/PodcastFeedGenerator/master/podcastgen.py > podcastgen.py 
 
 #Changes the file dates to make them in ascending order. This is a hack to make it work
 #  with Podcatchers that rely on date for order

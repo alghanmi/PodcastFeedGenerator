@@ -42,4 +42,4 @@ python podcastgen.py gen $_DIR \
 ```
 
 ###Notes
-  + Some podcatchers are sensitive to the date timestamps of the file. Here is an example of how you can fix that.
+  + Some podcatchers are sensitive to the date timestamps of the file. [Here is an example](https://github.com/alghanmi/PodcastFeedGenerator/blob/master/sample_gen.sh#L13-L27) of how you can fix that.
