@@ -1,9 +1,9 @@
-##Podcast Feed Generator
+#Podcast Feed Generator
 Generate an podcast RSS feed for a set of media in a directory.
 
 `podcastgen` is a wrapper for the [feedgen](http://lkiesow.github.io/python-feedgen/) python module.
 
-###Usage instructions
+##Usage instructions
 For usage instructions including arguments and options, run the following command:
 ```bash
 python podcastgen.py --help
@@ -25,7 +25,19 @@ pip install feedgen
 pip install mutagen
 ```
 
-###Example
+##Use Case -- AudioBooks from Library
+A good number of public libraries contract with [OverDrive](https://www.overdrive.com/) to provide digital media to its patrons. Their collection include Audiobooks. Unfortunately, they only have Windows and Mac clients, however, you can use [wine](http://www.winehq.org/) to run their Windows client:
+```bash
+#install required packages
+aptitude install wine winetricks
+
+#install Windows Media Player 10
+winetricks wmp10
+
+#Install OverDrive MediaConsole
+wine msiexec /i ODMediaConsoleSetup.msi
+```
+
 [sample generator](sample_gen.sh) script shows how to create a podcast feed for one of the Game of Thrones books. The basic command looks like:
 ```bash
 python podcastgen.py gen $_DIR \
