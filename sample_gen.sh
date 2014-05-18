@@ -19,7 +19,7 @@ if [ -n "$_FILE_SEED_DATE" ]; then
         _cnt=0
         for i in $(find $_DIR -type f | sort); do
                 (( _cnt += 1 ))
-                _file_date="$(date -d "$_FILE_SEED_DATE + $_cnt days" +'%Y%m%d%H%M')"
+                _file_date="$(date -d "$_FILE_SEED_DATE + $_cnt hours" +'%Y%m%d%H%M')"
                 touch -t $_file_date $i
         done
         IFS=$SAVEIFS
